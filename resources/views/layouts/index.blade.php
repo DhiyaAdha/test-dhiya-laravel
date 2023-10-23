@@ -17,7 +17,6 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
 
     {{-- navbar --}}
     <nav class="navbar bg-light fixed-top">
@@ -69,18 +68,25 @@
     {{-- Cover --}}
     <div class="container-fluid d-flex flex-column ">
         <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class=" d-flex cover" alt="Responsive image">
-    </div>
-    <div class="container col-lg-6 hero-title ">
-        <div class="row justify-content-start sub-title">
-            <div class="d-flex flex-column">
-                <div class="p-2 bg-primary text-white">28 Million Community</div>
-                <div class="p-2 bg-primary text-white">Lets work with us</div>
-                <div class="p-2 bg-primary text-white">
-                    Flex item 3
+        <div class="container col-lg-6 hero-title ">
+            <div class="row justify-content-start sub-title">
+                <div class="d-flex flex-column">
+                    <div class="p-2 bg-primary text-white">
+                        <h2>
+                            28 Million Community
+                        </h2>
+                    </div>
+                    <div class="p-2 bg-primary text-white">
+                        <h3>Lets work with us</h3>
+                    </div>
+                    <div class="p-2 bg-primary text-white" style="height: 30px">
+                    </div>
+                    <div class="p-2 bg-primary text-white">
+                        Flex item 3
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
     {{-- end Cover --}}
 
@@ -88,25 +94,118 @@
     <div class="container-fluid " style="width: 100%; height: 40%; background-color: red">
         <div class="row">
             <div class="d-flex flex-column">
-            <div class="col-lg-12 p-4 text-content-1 text-white" style="border:4px solid rgb(255, 255, 255);">
-                <h1>layout2</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente exercitationem eaque animi qui ut! Nulla quasi, dolorum est assumenda modi eum. Quisquam ad voluptatibus voluptatum repellat enim modi quo a porro facere blanditiis qui repellendus dolor beatae ipsa quam laborum deserunt adipisci, cupiditate voluptate numquam vel. Dolor incidunt distinctio dolorum laborum! Repellat eligendi laboriosam sit at 
-                    cupiditate accusantium, rerum debitis distinctio vitae ullam deserunt quia nostrum quae 
-                    nemo quidem, hic inventore, fugiat deleniti ex suscipit reiciendis saepe. Omnis voluptatum 
-                    quod adipisci odit. Similique in cupiditate ex odit? Beatae deserunt voluptatibus, tenetur 
-                    minima porro optio architecto! Harum ea inventore iure. Explicabo similique mollitia libero veritatis, nobis expedita, autem reiciendis veniam excepturi nesciunt quis qui, tempore praesentium ab provident dicta minima voluptas magni eaque dignissimos? Nam quam corrupti quos ducimus pariatur officia veritatis numquam aperiam rem suscipit dolore, tenetur ad sunt!
-                </p>
-                <div class="col-lg-6 p-2 bg-primary text-white" style="margin-top: 100px;">Warm Regrads</div>
-                <div class="col-lg-6 p-2 bg-primary text-white">United Creative</div>
-            </div>
+                <div class="col-lg-12 p-4 text-content-1 text-white" style="border:4px solid rgb(255, 255, 255);">
+                    <p class="mt-10 Subtitle">Bali United Football Club is an Indonesian professional
+                        club based in Gianyar, Bali. Bali United began operations in 2014 and continues to be of the
+                        highest tier in the Indonesian football competition, League 1. The club has a vision to grow the
+                        football industry in Indonesia through creating an ecosystem consisting of 4Cs namely the Club,
+                        Community, Corporation and Country. Staying true to this vision, the football club launched a
+                        sports agency under the name United Creative,
+                        to always bring the GAME ON beyond its own club.
+                    </p>
+                    <div class="col-lg-6 p-2 bg-primary text-white body-large" style="margin-top: 40px;">Warm Regrads,
+                    </div>
+                    <div class="col-lg-6 p-2 bg-primary text-white body-large">United Creative</div>
+                </div>
             </div>
         </div>
     </div>
     {{-- end Content-1 --}}
-    
-    <div class="container mt-4">
+
+    <div class="container-fluid" style="height: 40px">
+        <hr style="border: 2px solid;">
     </div>
-    {{-- end Fluid full --}}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 p-4 text-content-1 text-white" style="border:4px solid rgb(255, 255, 255);">
+                <div class="p-2 bg-primary text-white">
+                    Flex item 3
+                </div>
+                <div class="p-2 bg-primary text-white">
+                    Flex item 3
+                </div>
+            </div>
+            <div class="col-lg-6 p-4">
+                <p class="mt-10 Subtitle">Bali United Football Club is an Indonesian professional
+                    club based in Gianyar, Bali. Bali United began operations in 2014 and continues to be of the highest
+                    tier in the Indonesian football competition, League 1. The club has a vision to grow the football
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4">
+        <div class="row gx-3 gy-3" style="flex-wrap: wrap">
+            <div class="col-4">
+                <div class="p-3 border bg-light">
+                    <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
+                    <div class="row bg-danger">
+                        <div class="col-lg-12">bali United Fc</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 border bg-light">
+                    <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
+                    <div class="row bg-danger">
+                        <div class="col-lg-12">bali United Fc</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 border bg-light">
+                    <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
+                    <div class="row bg-danger">
+                        <div class="col-lg-12">bali United Fc</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 border bg-light">
+                    <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
+                    <div class="row bg-danger">
+                        <div class="col-lg-12">bali United Fc</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 border bg-light">
+                    <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
+                    <div class="row bg-danger">
+                        <div class="col-lg-12">bali United Fc</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <hr style="border: 1px solid;">
+            <hr style="border: 1px solid;">
+        </div>
+    </div>
+
+    <div class="container-fluid my-5 p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 facts-overlay">
+                <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 px-4">
+                <p class="body-reguler">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam quo
+                    tempora quibusdam fuga dolore quaerat rem perspiciatis facilis porro.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
