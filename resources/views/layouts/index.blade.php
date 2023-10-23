@@ -66,10 +66,9 @@
     </nav>
     {{-- end navbar --}}
 
-    {{-- Fluid full --}}
+    {{-- Cover --}}
     <div class="container-fluid d-flex flex-column ">
         <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class=" d-flex cover" alt="Responsive image">
-
     </div>
     <div class="container col-lg-6 hero-title ">
         <div class="row justify-content-start sub-title">
@@ -80,11 +79,31 @@
                     Flex item 3
                 </div>
             </div>
-            
         </div>
-        
+
     </div>
-    <div class="container bg-danger" style="width: 100%; height: 40%;"></div>
+    {{-- end Cover --}}
+
+    {{-- Content-1 --}}
+    <div class="container-fluid " style="width: 100%; height: 40%; background-color: red">
+        <div class="row">
+            <div class="d-flex flex-column">
+            <div class="col-lg-12 p-4 text-content-1 text-white" style="border:4px solid rgb(255, 255, 255);">
+                <h1>layout2</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente exercitationem eaque animi qui ut! Nulla quasi, dolorum est assumenda modi eum. Quisquam ad voluptatibus voluptatum repellat enim modi quo a porro facere blanditiis qui repellendus dolor beatae ipsa quam laborum deserunt adipisci, cupiditate voluptate numquam vel. Dolor incidunt distinctio dolorum laborum! Repellat eligendi laboriosam sit at 
+                    cupiditate accusantium, rerum debitis distinctio vitae ullam deserunt quia nostrum quae 
+                    nemo quidem, hic inventore, fugiat deleniti ex suscipit reiciendis saepe. Omnis voluptatum 
+                    quod adipisci odit. Similique in cupiditate ex odit? Beatae deserunt voluptatibus, tenetur 
+                    minima porro optio architecto! Harum ea inventore iure. Explicabo similique mollitia libero veritatis, nobis expedita, autem reiciendis veniam excepturi nesciunt quis qui, tempore praesentium ab provident dicta minima voluptas magni eaque dignissimos? Nam quam corrupti quos ducimus pariatur officia veritatis numquam aperiam rem suscipit dolore, tenetur ad sunt!
+                </p>
+                <div class="col-lg-6 p-2 bg-primary text-white" style="margin-top: 100px;">Warm Regrads</div>
+                <div class="col-lg-6 p-2 bg-primary text-white">United Creative</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    {{-- end Content-1 --}}
+    
     <div class="container mt-4">
     </div>
     {{-- end Fluid full --}}

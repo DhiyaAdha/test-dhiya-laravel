@@ -1,9 +1,10 @@
- body {
+body {
     margin-bottom: 800px;
+    background-color: burlywood;
 }
 
 * {
-  font-family: 'hk-grotesk', sans-serif;
+    font-family: "hk-grotesk", sans-serif;
 }
 
 .hero-title {
@@ -13,7 +14,7 @@
     height: 450px;
     left: 50px;
     /* top:70%; */
-	border:2px solid #006;
+    border: 4px solid rgb(255, 255, 255);
     /* background-color: bisque; */
 }
 
@@ -23,3 +24,9 @@
     background-color: red;
 }
 
+.text-content-1 {
+    font-size: 40px;
+    line-height: 1.5;
+    padding: 0 4px;
+    text-align: justify;
+}
