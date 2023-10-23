@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css') }}" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&display=swap"
+    <link rel="preconnect" href="{{ url('https://fonts.googleapis.com') }}">
+    <link rel="preconnect" href="{{ url('https://fonts.gstatic.com') }}" crossorigin>
+    <link href="{{ url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&display=swap') }}"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('assets/dist/css/custom.css') }}">
 </head>
 
 <body>
@@ -67,10 +69,23 @@
     {{-- Fluid full --}}
     <div class="container-fluid d-flex flex-column ">
         <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class=" d-flex cover" alt="Responsive image">
+
+    </div>
+    <div class="container col-lg-6 hero-title ">
+        <div class="row justify-content-start sub-title">
+            <div class="d-flex flex-column">
+                <div class="p-2 bg-primary text-white">28 Million Community</div>
+                <div class="p-2 bg-primary text-white">Lets work with us</div>
+                <div class="p-2 bg-primary text-white">
+                    Flex item 3
+                </div>
+            </div>
+            
+        </div>
         
     </div>
+    <div class="container bg-danger" style="width: 100%; height: 40%;"></div>
     <div class="container mt-4">
-        <img src="{{ asset('/assets/images/fluid-bg.png') }}" class="img-fluid" alt="Responsive image">
     </div>
     {{-- end Fluid full --}}
 
