@@ -148,13 +148,42 @@
     </div>
 
     <div class="container mb-10">
-        <div class="row mx-auto my-4 bg-danger">
-            <div class="col-lg-4 mx-1 card-products bg-primary align-items-center" style="width: 20%; height: 60%;">
+        <div class="row gx-5">
+            <div class="col-lg-4 gy-1 card-products  align-items-center" >
                 <div class="text-center" >
                     <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
             </div>
+            
+            <div class="col-lg-4 gy-1 card-products  align-items-center" >
+                <div class="text-center" >
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 gy-1 card-products  align-items-center" >
+                <div class="text-center" >
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 gy-1 card-products  align-items-center" >
+                <div class="text-center" >
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 gy-1 card-products  align-items-center" >
+                <div class="text-center" >
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
+            </div>
+            
             
             
         </div>
