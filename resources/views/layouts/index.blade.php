@@ -78,16 +78,16 @@
                 </h1>
             </div>
             <div class="col-lg-12 text-white mb-10">
-                <button type="button" class="btn btn-outline-light">
+                <button type="button" class="btn btn-outline-light" style="border: 3px solid; text-transform: uppercase; >
                     <span class="Subtitle">
-                        button Lets work with us
+                        Lets work with us
                     </span>
                 </button>
             </div>
             <div class="col-lg-12 text-white">
-                <div class="part-line">
-
-                </div>
+                <div class="part-line"></div>
+                <div class="part-line"></div>
+                <div class="part-line"></div>
             </div>
         </div>
     </div>
@@ -133,7 +133,7 @@
     </div>
 
     {{-- Content-2 --}}
-    <div class="container" style="border: 2px solid red; margin-top: 30px;">
+    <div class="container" style=" margin-top: 30px;">
         <div class="row ">
             <div class="col-lg-6 p-6 ">
                 <h3 class="products">
@@ -142,7 +142,9 @@
                 <div class="col-12">What we can do for you </div>
             </div>
             <div class="col-lg-6">
-                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-danger" style="border: 3px solid; text-transform: uppercase; ">View All</button>
+                </div>
             </div>
         </div>
     </div>
