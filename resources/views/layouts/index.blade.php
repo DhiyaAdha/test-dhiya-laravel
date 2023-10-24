@@ -15,6 +15,7 @@
         rel="stylesheet"> --}}
 
     <link rel="stylesheet" href="{{ asset('assets/dist/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('https://www.w3schools.com/w3css/4/w3.css') }}">
 </head>
 
 <body>
@@ -68,7 +69,14 @@
 
     {{-- Cover --}}
     <div class="cover-bg ">
-        <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class="cover cover-bg-main" alt="Responsive image">
+        {{-- <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class="cover cover-bg-main" alt="Responsive image"> --}}
+        <img class="mySlides cover cover-bg-main" src="{{ asset('assets/images/konser-11.jpg') }}" style="width:100%">
+        <img class="mySlides cover cover-bg-main" src="{{ asset('assets/images/konser-12.jpg') }}" style="width:100%">
+        <img class="mySlides cover cover-bg-main" src="{{ asset('assets/images/konser-13.jpg') }}" style="width:100%">
+        <img class="mySlides cover cover-bg-main" src="{{ asset('assets/images/fluid-bg1.jpg') }}" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
     <div class="container hero-title ">
         <div class="row ">
@@ -78,7 +86,8 @@
                 </h1>
             </div>
             <div class="col-lg-12 text-white mb-10">
-                <button type="button" class="btn btn-outline-light" style="border: 3px solid; text-transform: uppercase; >
+                <button type="button" class="btn btn-outline-light"
+                    style="border: 3px solid; text-transform: uppercase;">
                     <span class="Subtitle">
                         Lets work with us
                     </span>
@@ -133,7 +142,7 @@
     </div>
 
     {{-- Content-2 --}}
-    <div class="container" style=" margin-top: 30px;">
+    <div class="container" style=" margin-top: 30px; ">
         <div class="row ">
             <div class="col-lg-6 p-6 ">
                 <h3 class="products">
@@ -143,57 +152,85 @@
             </div>
             <div class="col-lg-6">
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-danger" style="border: 3px solid; text-transform: uppercase; ">View All</button>
+                    <button type="button" class="btn btn-outline-danger"
+                        style="border: 3px solid; text-transform: uppercase; ">View All</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container mb-10">
+    <div class="container" style="margin-bottom: 30px;">
         <div class="row gx-5">
-            <div class="col-lg-4 gy-1 card-products  align-items-center" >
-                <div class="text-center" >
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
             </div>
-            
-            <div class="col-lg-4 gy-1 card-products  align-items-center" >
-                <div class="text-center" >
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
             </div>
-            
-            <div class="col-lg-4 gy-1 card-products  align-items-center" >
-                <div class="text-center" >
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
             </div>
-            
-            <div class="col-lg-4 gy-1 card-products  align-items-center" >
-                <div class="text-center" >
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
             </div>
-            
-            <div class="col-lg-4 gy-1 card-products  align-items-center" >
-                <div class="text-center" >
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
             </div>
-            
-            
-            
+
+
+
         </div>
     </div>
     {{-- end Content-2 --}}
 
+    <div class="container border-hr">
+        <div class="  text-center" style=" ">
+        </div>
+    </div>
 
     {{-- content 3 --}}
+    <div class="container-fluid bar">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <span class="bar_content slide-span">
+                    What Make Use Different
+                </span>
+            </div>
+            <div class="col-lg-6">
+                <span class="bar_content slide-span">
+                    What Make Use Different
+                </span>
+            </div>
+            
+        </div>
+
+
+    </div>
+
     <div class="container-fluid my-5 p-0">
         <div class="row g-0 text-center">
             <div class="col-lg-12">
@@ -590,6 +627,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
+    <script src="{{ asset('assets/dist/js/custom.js') }}"></script>
 </body>
 
 </html>

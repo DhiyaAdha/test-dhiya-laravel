@@ -40,6 +40,8 @@ body {
     font-size: 14px;
 }
 
+.mySlides {display:none;}
+
 .cover-bg {
     width: 100%;
     height: 864px;
@@ -80,10 +82,7 @@ body {
     margin-left: 2px;
     border: 1px solid maroon;
     border-radius: 25px;
-    
 }
-
-
 
 .content-title {
     margin: 20px 10px 0px 10px;
@@ -150,6 +149,61 @@ body {
     font-weight: 400;
     /* font-size: 16px; */
 }
+
+.border-hr {
+    border-top: 1px  solid hwb(0 27% 72%); /* Atur warna, ketebalan, dan gaya sesuai kebutuhan */
+    border-bottom: 1px solid hwb(0 27% 72%);
+  /* Sisi kanan dan kiri kosong */
+  border-left: none;
+  border-right: none;
+  height: 10px;
+  width: 100%;
+}
+
+/* sliding text */
+@import url("https://fonts.googleapis.com/css?family=Gelasio&display=swap");
+
+/* * { box-sizing: border-box; } */
+
+/* body,
+html { overflow-x: hidden; } */
+
+.bar {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 25px 0;
+
+  /* background-color: #e74c3c; */
+  color: black;
+
+  font-size: 15px;
+}
+
+.bar_content {
+  display: block; 
+  width: 100%;
+  transform: translateX(100%); /* Animation start out of the screen */
+
+  /* Add the animation */
+  animation: move 30s linear infinite ;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+.slide-span {
+    font-weight: bold;
+    font-size: 32px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+/* sliding text */
 
 .facts-overlay {
     padding: 0px;
