@@ -8,11 +8,11 @@
 
     <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css') }}" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="preconnect" href="{{ url('https://fonts.googleapis.com') }}">
+    {{-- <link rel="preconnect" href="{{ url('https://fonts.googleapis.com') }}">
     <link rel="preconnect" href="{{ url('https://fonts.gstatic.com') }}" crossorigin>
     <link
         href="{{ url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap') }}"
-        rel="stylesheet">
+        rel="stylesheet"> --}}
 
     <link rel="stylesheet" href="{{ asset('assets/dist/css/custom.css') }}">
 </head>
@@ -67,24 +67,26 @@
     {{-- end navbar --}}
 
     {{-- Cover --}}
-    <div class="container-fluid d-flex flex-column ">
+    <div class="cover-bg">
         <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class=" d-flex cover" alt="Responsive image">
-        <div class="container col-lg-6 hero-title ">
-            <div class="row justify-content-start sub-title">
-                <div class="d-flex flex-column">
-                    <div class="p-2 bg-primary text-white">
-                        <h2>
-                            28 Million Community
-                        </h2>
-                    </div>
-                    <div class="p-2 bg-primary text-white">
-                        <h3>Lets work with us</h3>
-                    </div>
-                    <div class="p-2 bg-primary text-white" style="height: 30px">
-                    </div>
-                    <div class="p-2 bg-primary text-white">
-                        Flex item 3
-                    </div>
+    </div>
+    <div class="container hero-title ">
+        <div class="row ">
+            <div class="col-lg-8 text-white mb-5">
+                <h1 class="cover-title">
+                    28 Million Community
+                </h1>
+            </div>
+            <div class="col-lg-12 text-white mb-10">
+                <button type="button" class="btn btn-outline-light">
+                    <span class="Subtitle">
+                        button Lets work with us
+                    </span>
+                </button>
+            </div>
+            <div class="col-lg-12 text-white">
+                <div class="part-line">
+
                 </div>
             </div>
         </div>
@@ -312,7 +314,7 @@
                 <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
                 <div class="col-lg-12 bg-danger">bali United Fc</div>
             </div>
-            
+
         </div>
     </div>
 
@@ -343,7 +345,7 @@
                 </div> --}}
             </div>
         </div>
-        
+
     </div>
     <div class="container">
         <div class="row">
@@ -416,7 +418,7 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-12 Subtitle cta-title text-center">
-                
+
                 <span class="cta-title">
                     let's create
                 </span>
