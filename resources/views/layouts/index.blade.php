@@ -232,20 +232,7 @@
     </div>
     {{--  --}}
 
-
-    <div class="container-fluid my-3 p-0">
-        <div class="row g-0">
-            <div class="col-lg-6 facts-overlay">
-                <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover" alt="Responsive image">
-            </div>
-            <div class="col-lg-6 px-4">
-                <p class="body-reguler">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam quo
-                    tempora quibusdam fuga dolore quaerat rem perspiciatis facilis porro.
-                </p>
-            </div>
-        </div>
-    </div>
-
+    {{-- carousel --}}
     <div id="carouselExampleIndicators" class="container-fluid carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -256,48 +243,63 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner ">
+            
             <div class="carousel-item active">
                 <div class="container">
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-lg-6 facts-overlay">
-                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
+                            <img src="{{ asset('assets/images/konser-11.jpg') }}" class="cover"
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6 facts-overlay">
-                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
-                                alt="Responsive image">
+                        <div class="col-lg-6  pl-4" >
+                            <p class="body-reguler">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
+                                dolore voluptas quas, esse adipisci maiores commodi assumenda nulla perspiciatis tempore
+                                impedit eveniet voluptatum cum odio ex ducimus consectetur!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item ">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 facts-overlay">
+                    <div class="row ">
+                        <div class="col-lg-6 ">
+                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover "
+                                alt="Responsive image">
+                        </div>
+                        <div class="col-lg-6  pl-4" >
+                            <p class="body-reguler">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
+                                dolore voluptas quas, esse adipisci maiores commodi assumenda nulla perspiciatis tempore
+                                impedit eveniet voluptatum cum odio ex ducimus consectetur!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item ">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-6 facts-overlay ">
                             <img src="{{ asset('assets/images/konser-12.jpg') }}" class="cover"
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6 facts-overlay">
-                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
-                                alt="Responsive image">
+                        <div class="col-lg-6 pl-4" >
+                            <p class="body-reguler">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
+                                dolore voluptas quas, esse adipisci maiores commodi assumenda nulla perspiciatis tempore
+                                impedit eveniet voluptatum cum odio ex ducimus consectetur!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 facts-overlay">
-                            <img src="{{ asset('assets/images/konser-13.jpg') }}" class="cover"
-                                alt="Responsive image">
-                        </div>
-                        <div class="col-lg-6 facts-overlay">
-                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
-                                alt="Responsive image">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -311,234 +313,184 @@
         </button>
     </div>
 
-
-
     <div class="container-fluid" style="height: 40px">
         <hr style="border: 2px solid;">
     </div>
+    {{-- end carousel --}}
 
-    {{-- content 4 --}}
-    <div class="container " style="border: 2px solid red">
+    {{-- Content-4 --}}
+    <div class="container" style=" margin-top: 30px; ">
         <div class="row ">
-            <div class="col-lg-6 p-6">col
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">col-dalam</div>
-                        <div class="col-12">col-dalam</div>
-                    </div>
+            <div class="col-lg-6 p-6 ">
+                <h3 class="products">
+                    Services
+                </h3>
+                <div class="col-12">What we can do for you </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-danger"
+                        style="border: 3px solid; text-transform: uppercase; ">View All</button>
                 </div>
             </div>
-            <div class="col-lg-6">col</div>
         </div>
     </div>
 
-    <div class="container mb-10">
-        <div class="row mx-auto my-4">
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
+    <div class="container" style="margin-bottom: 30px;">
+        <div class="row gx-5">
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
             </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
             </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
             </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
             </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger ">bali United Fc</div>
+
+            <div class="col-lg-4 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
             </div>
         </div>
     </div>
-    {{-- end content 4 --}}
+    {{-- end Content- --}}
 
-    <div class="container">
-        <hr style="border: 1px solid;">
-        <hr style="border: 1px solid;">
+
+    <div class="container border-hr mb-4">
+        <div class="  text-center" style=" ">
+        </div>
     </div>
 
     {{-- content 5 --}}
-    <div class="container-fluid my-5 p-0">
-        <div class="row g-0 text-center">
-            <div class="col-lg-12">
-                <p class="body-reguler">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam quo
-                    tempora quibusdam fuga dolore quaerat rem perspiciatis facilis porro.
-                </p>
+    <div class="container-fluid">
+        <div class="horizontal-scrolling-items">
+            <div class="horizontal-scrolling-items__item">
+                What Make Use Different &nbsp
             </div>
-        </div>
-        <div class="row g-0">
-            <div class="col-lg-6 facts-overlay">
-                <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover" alt="Responsive image">
+            <div class="horizontal-scrolling-items__item">
+                What Make Use Different &nbsp
             </div>
-            <div class="col-lg-6 px-4">
-                <p class="body-reguler">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam quo
-                    tempora quibusdam fuga dolore quaerat rem perspiciatis facilis porro.
-                </p>
+            <div class="horizontal-scrolling-items__item">
+                What Make Use Different &nbsp
             </div>
+
         </div>
     </div>
+    
+    {{-- end content 5 --}}
 
-    <div class="container " style="border: 2px solid red">
-        <div class="row ">
-            <div class="col-lg-6 p-6">
+    {{-- carousel-2 --}}
+<div id="carouselExampleIndicators" class="container-fluid carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+            
+            <div class="carousel-item active">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">col-dalam</div>
-                        <div class="col-12">col-dalam</div>
+                    <div class="row ">
+                        <div class="col-lg-6 facts-overlay">
+                            <img src="{{ asset('assets/images/konser-11.jpg') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                        <div class="col-lg-6  pl-4" >
+                            <p class="body-reguler">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
+                                dolore voluptas quas, esse adipisci maiores commodi assumenda nulla perspiciatis tempore
+                                impedit eveniet voluptatum cum odio ex ducimus consectetur!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">col</div>
-        </div>
-    </div>
-    <div class="container mb-10">
-        <div class="row mx-auto my-4">
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-4">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container " style="border: 2px solid red">
-        <div class="row ">
-            <div class="col-lg-4 p-6">our works
-                {{-- <div class="container">
-                    <div class="row">
-                        <div class="col-12">our works</div>
-                        <div class="col-12">col-dalam</div>
+            <div class="carousel-item ">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-6 ">
+                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover "
+                                alt="Responsive image">
+                        </div>
+                        <div class="col-lg-6  pl-4" >
+                            <p class="body-reguler">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
+                                dolore voluptas quas, esse adipisci maiores commodi assumenda nulla perspiciatis tempore
+                                impedit eveniet voluptatum cum odio ex ducimus consectetur!
+                            </p>
+                        </div>
                     </div>
-                </div> --}}
+                </div>
             </div>
-            <div class="col-lg-4 p-6">our works
-                {{-- <div class="container">
-                    <div class="row">
-                        <div class="col-12">our works</div>
-                        <div class="col-12">col-dalam</div>
+            
+            <div class="carousel-item ">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-6 facts-overlay ">
+                            <img src="{{ asset('assets/images/konser-12.jpg') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                        <div class="col-lg-6 pl-4" >
+                            <p class="body-reguler">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
+                                dolore voluptas quas, esse adipisci maiores commodi assumenda nulla perspiciatis tempore
+                                impedit eveniet voluptatum cum odio ex ducimus consectetur!
+                            </p>
+                        </div>
                     </div>
-                </div> --}}
+                </div>
             </div>
-            <div class="col-lg-4 p-6">our works
-                {{-- <div class="container">
-                    <div class="row">
-                        <div class="col-12">our works</div>
-                        <div class="col-12">col-dalam</div>
-                    </div>
-                </div> --}}
-            </div>
+            
         </div>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-4 p-2">
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-            </div>
-            <div class="col-4 p-2">
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-            </div>
-            <div class="col-4 p-2">
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-            </div>
-        </div>
-    </div>
-
-    {{-- end content 5 --}}
 
     <div class="container-fluid" style="height: 40px">
         <hr style="border: 2px solid;">
     </div>
+    {{-- end-carousel-2 --}}
 
-    {{-- content 6 --}}
-    <div class="container " style="border: 2px solid red">
-        <div class="row ">
-            <div class="col-lg-6 p-6">col
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">col-dalam</div>
-                        <div class="col-12">col-dalam</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">col</div>
-        </div>
-    </div>
-    <div class="container mb-10">
-        <div class="row mx-auto my-4">
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger ">bali United Fc</div>
-            </div>
-        </div>
-    </div>
-    {{-- end content 6 --}}
 
     <div class="container my-5">
         <div class="row">
