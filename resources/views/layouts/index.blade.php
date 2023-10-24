@@ -67,8 +67,8 @@
     {{-- end navbar --}}
 
     {{-- Cover --}}
-    <div class="cover-bg">
-        <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class=" d-flex cover" alt="Responsive image">
+    <div class="cover-bg ">
+        <img src="{{ asset('/assets/images/fluid-bg1.jpg') }}" class="cover cover-bg-main" alt="Responsive image">
     </div>
     <div class="container hero-title ">
         <div class="row ">
@@ -94,21 +94,30 @@
     {{-- end Cover --}}
 
     {{-- Content-1 --}}
-    <div class="container-fluid " style="width: 100%; height: 40%; background-color: red">
+    <div class="container-fluid mb-10">
         <div class="row">
-            <div class="d-flex flex-column">
-                <div class="col-lg-12 p-4 text-content-1 text-white" style="border:4px solid rgb(255, 255, 255);">
-                    <p class="mt-10 Subtitle">Bali United Football Club is an Indonesian professional
+            <div class="col-lg-12 my-auto" >
+                <p class="body-large content-title ">Bali United Football Club is an Indonesian professional
                         club based in Gianyar, Bali. Bali United began operations in 2014 and continues to be of the
                         highest tier in the Indonesian football competition, League 1. The club has a vision to grow the
                         football industry in Indonesia through creating an ecosystem consisting of 4Cs namely the Club,
-                        Community, Corporation and Country. Staying true to this vision, the football club launched a
+                        Community, Corporation and Country. 
+                        <span class="content-text-1" >
+                            Staying true to this vision,
+                        </span> the football club launched a
                         sports agency under the name United Creative,
-                        to always bring the GAME ON beyond its own club.
+                        to always bring the 
+                        <span class="content-text-2">
+                            GAME ON 
+                        </span>
+                        beyond its own club.
                     </p>
-                    <div class="col-lg-6 p-2 bg-primary text-white body-large" style="margin-top: 40px;">Warm Regrads,
-                    </div>
-                    <div class="col-lg-6 p-2 bg-primary text-white body-large">United Creative</div>
+            </div>
+            <div class="col-lg-12 body-large">Warm Regards</div>
+            <div class="col-lg-12 ">
+                <div class="img-content-1" style="">
+                    <img src="{{ asset('assets/images/utd-creative.png') }}" 
+                    alt="" class="img-1">
                 </div>
             </div>
         </div>
@@ -116,7 +125,7 @@
     {{-- end Content-1 --}}
 
     {{-- Content-2 --}}
-    <div class="container " style="border: 2px solid red">
+    <div class="container" style="border: 2px solid red; margin-top: 30px;">
         <div class="row ">
             <div class="col-lg-6 p-6">col
                 <div class="container">
