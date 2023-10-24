@@ -485,6 +485,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    {{-- code --}}
 
     <div class="container-fluid" style="height: 40px">
         <hr style="border: 2px solid;">
