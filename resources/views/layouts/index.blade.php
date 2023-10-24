@@ -77,7 +77,9 @@
 
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
     </div>
+
     <div class="container hero-title ">
         <div class="row ">
             <div class="col-lg-8 text-white mb-5">
@@ -207,38 +209,31 @@
     </div>
     {{-- end Content-2 --}}
 
-    <div class="container border-hr">
+    <div class="container border-hr mb-4">
         <div class="  text-center" style=" ">
         </div>
     </div>
 
     {{-- content 3 --}}
-    <div class="container-fluid bar">
-        <div class="row">
-            <div class="col-lg-6 ">
-                <span class="bar_content slide-span">
-                    What Make Use Different
-                </span>
+
+    <div class="container-fluid">
+        <div class="horizontal-scrolling-items">
+            <div class="horizontal-scrolling-items__item">
+                What Make Use Different &nbsp
             </div>
-            <div class="col-lg-6">
-                <span class="bar_content slide-span">
-                    What Make Use Different
-                </span>
+            <div class="horizontal-scrolling-items__item">
+                What Make Use Different &nbsp
             </div>
-            
+            <div class="horizontal-scrolling-items__item">
+                What Make Use Different &nbsp
+            </div>
+
         </div>
-
-
     </div>
+    {{--  --}}
 
-    <div class="container-fluid my-5 p-0">
-        <div class="row g-0 text-center">
-            <div class="col-lg-12">
-                <p class="body-reguler">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam quo
-                    tempora quibusdam fuga dolore quaerat rem perspiciatis facilis porro.
-                </p>
-            </div>
-        </div>
+
+    <div class="container-fluid my-3 p-0">
         <div class="row g-0">
             <div class="col-lg-6 facts-overlay">
                 <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover" alt="Responsive image">
@@ -250,7 +245,72 @@
             </div>
         </div>
     </div>
-    {{-- end content 3 --}}
+
+    <div id="carouselExampleIndicators" class="container-fluid carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 facts-overlay">
+                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                        <div class="col-lg-6 facts-overlay">
+                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 facts-overlay">
+                            <img src="{{ asset('assets/images/konser-12.jpg') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                        <div class="col-lg-6 facts-overlay">
+                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 facts-overlay">
+                            <img src="{{ asset('assets/images/konser-13.jpg') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                        <div class="col-lg-6 facts-overlay">
+                            <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover"
+                                alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 
 
     <div class="container-fluid" style="height: 40px">
