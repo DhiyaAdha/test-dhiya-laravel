@@ -25,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     /* margin-bottom: 800px; */
-    background-color: rgb(217, 215, 211);
+    background-color: rgb(255, 255, 255);
 }
 
 .body-large {
@@ -79,6 +79,11 @@ body {
 }
 
 .content-title {
+    margin: 20px 10px 0px 10px;
+    text-align: justify;
+}
+
+.content-title-1 {
     margin: 30px 10px 40px 10px;
     text-align: justify;
 }
@@ -108,8 +113,6 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     background-color: red;
-    
-
 }
 
 .img-1 {
@@ -118,6 +121,27 @@ body {
     object-position: center;
     object-fit: none;
     /* justify-content: center; */
+}
+
+.products {
+    font-weight: bold;
+}
+
+.card-products {
+    overflow: hidden;
+    color: white;
+    opacity: 70%;
+    
+}
+
+.img-products {
+    /* display: flex; */
+}
+
+.title-products {
+    display: relative;
+    font-weight: 400;
+    /* font-size: 16px; */
 }
 
 .facts-overlay {

@@ -95,80 +95,68 @@
 
     {{-- Content-1 --}}
     <div class="container-fluid mb-10">
-        <div class="row">
-            <div class="col-lg-12 my-auto" >
-                <p class="body-large content-title ">Bali United Football Club is an Indonesian professional
-                        club based in Gianyar, Bali. Bali United began operations in 2014 and continues to be of the
-                        highest tier in the Indonesian football competition, League 1. The club has a vision to grow the
-                        football industry in Indonesia through creating an ecosystem consisting of 4Cs namely the Club,
-                        Community, Corporation and Country. 
-                        <span class="content-text-1" >
-                            Staying true to this vision,
-                        </span> the football club launched a
-                        sports agency under the name United Creative,
-                        to always bring the 
-                        <span class="content-text-2">
-                            GAME ON 
-                        </span>
-                        beyond its own club.
-                    </p>
-            </div>
-            <div class="col-lg-12 body-large">Warm Regards</div>
+        <div class="row my-auto">
             <div class="col-lg-12 ">
+                <p class="body-large mx-4 my-4 ">Bali United Football Club is an Indonesian professional
+                    club based in Gianyar, Bali. Bali United began operations in 2014 and continues to be of the
+                    highest tier in the Indonesian football competition, League 1. The club has a vision to grow the
+                    football industry in Indonesia through creating an ecosystem consisting of 4Cs namely the Club,
+                    Community, Corporation and Country.
+                    <span class="content-text-1">
+                        Staying true to this vision,
+                    </span> the football club launched a
+                    sports agency under the name United Creative,
+                    to always bring the
+                    <span class="content-text-2">
+                        GAME ON
+                    </span>
+                    beyond its own club.
+                </p>
+            </div>
+            <div class="col-lg-12 ">
+                <p class="body-large mx-4 my-2 ">
+                    Warm Regards
+                </p>
+            </div>
+
+            <div class="col-lg-12 " style="margin-bottom: 14px ">
                 <div class="img-content-1" style="">
-                    <img src="{{ asset('assets/images/utd-creative.png') }}" 
-                    alt="" class="img-1">
+                    <img src="{{ asset('assets/images/utd-creative.png') }}" alt="" class="img-1">
                 </div>
             </div>
         </div>
     </div>
     {{-- end Content-1 --}}
 
+    <div class="container-fluid" style="height: 40px">
+        <hr style="border: 2px solid;">
+    </div>
+
     {{-- Content-2 --}}
     <div class="container" style="border: 2px solid red; margin-top: 30px;">
         <div class="row ">
-            <div class="col-lg-6 p-6">col
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">col-dalam</div>
-                        <div class="col-12">col-dalam</div>
-                    </div>
-                </div>
+            <div class="col-lg-6 p-6 ">
+                <h3 class="products">
+                    Products
+                </h3>
+                <div class="col-12">What we can do for you </div>
             </div>
-            <div class="col-lg-6">col</div>
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+            </div>
         </div>
     </div>
 
     <div class="container mb-10">
-        <div class="row mx-auto my-4">
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
+        <div class="row mx-auto my-4 bg-danger">
+            <div class="col-lg-4 mx-1 card-products bg-primary align-items-center" style="width: 20%; height: 60%;">
+                <div class="text-center" >
+                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products " alt="Responsive image">
+                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                </div>
             </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger">bali United Fc</div>
-            </div>
-            <div class="col-lg-2 mx-2">image
-                <img src="{{ asset('assets/images/logo-bali-u1.png') }}" class="cover" alt="Responsive image">
-                <div class="col-lg-12 bg-danger ">bali United Fc</div>
-            </div>
+            
+            
         </div>
     </div>
     {{-- end Content-2 --}}
