@@ -578,16 +578,16 @@
                                 Products
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Products</a>
+                                Products
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Service</a>
+                                Service
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Work</a>
+                                Work
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Client</a>
+                                Client
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -599,13 +599,13 @@
                                 Useful links
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">About Us</a>
+                                About Us
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Contact us</a>
+                                Contact us
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Career</a>
+                                Career
                             </p>
 
                         </div>
@@ -614,7 +614,10 @@
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
-                        </div>
+                            <img src="{{ asset('assets/convert/ig-icon.png') }}" alt=""
+                                    style="width: 30px; height: 30px;">
+                            <h6 class="text-uppercase mb-4">© 2021 Copyright:</h6>
+                                </div>
                         <!-- Grid column -->
                     </div>
                     <!-- Grid row -->
@@ -624,8 +627,9 @@
 
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-                © 2021 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                
+                {{-- © 2021 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> --}}
             </div>
             <!-- Copyright -->
         </footer>
