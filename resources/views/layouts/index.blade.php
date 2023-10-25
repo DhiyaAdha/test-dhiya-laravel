@@ -24,7 +24,7 @@
     <nav class="navbar bg-transparent fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('assets/images/logo-A.png') }}" alt="" style="width: 40px; height: 40px;">
+                <img src="{{ asset('assets/images/logo-A.png') }}" alt="" style="width: 60px; height: 70px;">
             </a>
             <button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -157,7 +157,7 @@
             <div class="col-lg-6">
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-danger"
-                        style="border: 3px solid; text-transform: uppercase; ">View All</button>
+                        style="border: 1px solid; text-transform: uppercase; ">View All</button>
                 </div>
             </div>
         </div>
@@ -299,7 +299,7 @@
             <div class="col-lg-6">
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-danger"
-                        style="border: 3px solid; text-transform: uppercase; ">View All</button>
+                        style="border: 1px solid; text-transform: uppercase; ">View All</button>
                 </div>
             </div>
         </div>
@@ -443,10 +443,9 @@
                     creative project
                 </span>
             </div>
-            <div class="col-lg-12 Subtitle cta-title text-center">
-                <span class="cta-title">
-                    button
-                </span>
+            <div class="col-lg-12 Subtitle cta-title text-center mt-2">
+                <button type="button" class="btn btn-outline-danger"
+                    style="border: 1px solid; text-transform: uppercase; ">Start Project With US</button>
             </div>
         </div>
     </div>
@@ -519,7 +518,7 @@
 
     <!-- Footer -->
     <div class=" d-flex mt-5 mx-0 my-0 w-100">
-        <footer class="text-center text-lg-start bg-white text-muted mt-10 w-100">
+        <footer class="text-center text-lg-start bg-dark text-muted mt-10 w-100">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->
@@ -559,12 +558,15 @@
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <!-- Content -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            <a class="navbar-brand" href="#">
+                                <img src="{{ asset('assets/images/logo-A.png') }}" alt=""
+                                    style="width: 80px; height: 80px;">
+                            </a>
+                            <h6 class="text-uppercase fw-bold mx-0 text-left">
+                                United Creative Head Office
                             </h6>
                             <p>
-                                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit.
+                                Wisma Bali United, Jalan Panjang No. 29, Kedoya Selatan, Jakarta Barat (021) 12345678
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -576,16 +578,16 @@
                                 Products
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Angular</a>
+                                <a href="#!" class="text-reset">Products</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">React</a>
+                                <a href="#!" class="text-reset">Service</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Vue</a>
+                                <a href="#!" class="text-reset">Work</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Laravel</a>
+                                <a href="#!" class="text-reset">Client</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -597,31 +599,21 @@
                                 Useful links
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Pricing</a>
+                                <a href="#!" class="text-reset">About Us</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Settings</a>
+                                <a href="#!" class="text-reset">Contact us</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Orders</a>
+                                <a href="#!" class="text-reset">Career</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Help</a>
-                            </p>
+
                         </div>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
-                            <p>
-                                <i class="fas fa-envelope me-3 text-secondary"></i>
-                                info@example.com
-                            </p>
-                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
                         </div>
                         <!-- Grid column -->
                     </div>
