@@ -169,7 +169,7 @@
             @foreach ($product as $p)
             <div class="col-lg-4 gy-1 card-products  align-items-center">
                 <div class="text-center">
-                    <img src="{{ asset($p->img_product) }}" class="cover img-products "
+                    <img src="{{ Storage::url($p->img_product) }}" class="cover img-products "
                         alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
