@@ -34,9 +34,10 @@ Route::name('auth.')->group(function () {
 });
 
 // product API
-Route::post('product-create', [ProductController::class, 'create'])->name('create-product');
 Route::prefix('product')->name('product.')->group(
     function () {
+        Route::post('', [ProductController::class, 'create'])->name('create-product');
+        Route::get('{id}', [ProductController::class, 'show'])->name('detail-product');
 
     }
 );

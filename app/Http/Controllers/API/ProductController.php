@@ -38,4 +38,16 @@ class ProductController extends Controller
             return ResponseFormatter::error($e->getMessage(), 500);
         }
     }
+
+    public function show($id)
+    {
+        try {
+            // Cari produk berdasarkan ID
+            $product = Product::findOrFail($id);
+
+            return ResponseFormatter::success($product, 'Product found');
+        } catch (Exception $e) {
+            return ResponseFormatter::error($e->getMessage(), 404);
+        }
+    }
 }
