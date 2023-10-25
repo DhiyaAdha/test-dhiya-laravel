@@ -13,7 +13,7 @@ class Service extends Model
     
     protected $fillable = [
         'name',
-        'img_product',
+        'img_service',
         'product_id'
     ];
 

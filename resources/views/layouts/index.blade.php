@@ -21,10 +21,12 @@
 <body>
 
     {{-- navbar --}}
-    <nav class="navbar bg-light fixed-top">
+    <nav class="navbar bg-transparent fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            <a class="navbar-brand" href="#">
+                <img src="{{ asset('assets/images/logo-A.png') }}" alt="" style="width: 40px; height: 40px;">
+            </a>
+            <button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -80,8 +82,8 @@
 
     </div>
 
-    <div class="container hero-title ">
-        <div class="row ">
+    <div class="container ">
+        <div class="row hero-title ">
             <div class="col-lg-8 text-white mb-5">
                 <h1 class="cover-title">
                     28 Million Community
@@ -163,9 +165,11 @@
 
     <div class="container" style="margin-bottom: 30px;">
         <div class="row gx-5">
+
+            @foreach ($product as $p)
             <div class="col-lg-4 gy-1 card-products  align-items-center">
                 <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
+                    <img src="{{ asset($p->img_product) }}" class="cover img-products "
                         alt="Responsive image">
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
@@ -202,7 +206,7 @@
                     <div class="bg-danger body-large card-products text-center">bali United Fc</div>
                 </div>
             </div>
-
+            @endforeach
 
 
         </div>

@@ -12,7 +12,6 @@ use App\Http\Requests\CreateProductRequest;
 class ProductController extends Controller
 {
 
-
     //create
     public function create(CreateProductRequest $request)
     {
@@ -39,7 +38,21 @@ class ProductController extends Controller
         }
     }
 
-    public function show($id)
+    public function show()
+    {
+        try {
+            // Cari produk berdasarkan ID
+            $product = Product::all();
+            dd($product);
+
+            // return ResponseFormatter::success($product, 'Product found');
+            return view('layouts.index', compact('product'));
+        } catch (Exception $e) {
+            return ResponseFormatter::error($e->getMessage(), 404);
+        }
+    }
+
+    public function detail($id)
     {
         try {
             // Cari produk berdasarkan ID

@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\API\LandingController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,11 +35,21 @@ Route::name('auth.')->group(function () {
     });
 });
 
+Route::get('', [LandingControllerController::class, 'show_data']);
+
 // product API
 Route::prefix('product')->name('product.')->group(
     function () {
         Route::post('', [ProductController::class, 'create'])->name('create-product');
         Route::get('{id}', [ProductController::class, 'show'])->name('detail-product');
+    }
+);
 
+// service API
+Route::prefix('service')->name('service.')->group(
+    function () {
+        Route::post('', [ServiceController::class, 'create'])->name('create-service');
+        Route::get('', [ServiceController::class, 'show'])->name('service');
+        // Route::get('{id}', [ServiceController::class, 'show'])->name('detail-service');
     }
 );
