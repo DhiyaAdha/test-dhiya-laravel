@@ -26,8 +26,8 @@
             <a class="navbar-brand" href="#">
                 <img src="{{ asset('assets/images/logo-A.png') }}" alt="" style="width: 40px; height: 40px;">
             </a>
-            <button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
@@ -165,50 +165,15 @@
 
     <div class="container" style="margin-bottom: 30px;">
         <div class="row gx-5">
-
             @foreach ($product as $p)
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ Storage::url($p->img_product) }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+                <div class="col-lg-4 gy-1 card-products  align-items-center">
+                    <div class="text-center">
+                        <img src="{{ Storage::url($p->img_product) }}" class="cover img-products "
+                            alt="Responsive image">
+                        <div class="body-large card-products text-center text-dark">{{ $p->name }}</div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
             @endforeach
-
-
         </div>
     </div>
     {{-- end Content-2 --}}
@@ -247,7 +212,7 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner ">
-            
+
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row ">
@@ -255,7 +220,7 @@
                             <img src="{{ asset('assets/images/konser-11.jpg') }}" class="cover"
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6  pl-4" >
+                        <div class="col-lg-6  pl-4">
                             <p class="body-reguler">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                                 quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
@@ -273,7 +238,7 @@
                             <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover "
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6  pl-4" >
+                        <div class="col-lg-6  pl-4">
                             <p class="body-reguler">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                                 quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
@@ -284,7 +249,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="carousel-item ">
                 <div class="container">
                     <div class="row ">
@@ -292,7 +257,7 @@
                             <img src="{{ asset('assets/images/konser-12.jpg') }}" class="cover"
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6 pl-4" >
+                        <div class="col-lg-6 pl-4">
                             <p class="body-reguler">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                                 quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
@@ -303,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -342,45 +307,15 @@
 
     <div class="container" style="margin-bottom: 30px;">
         <div class="row gx-5">
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
+            @foreach ($service as $s)
+                <div class="col-lg-4 gy-1 card-products  align-items-center">
+                    <div class="text-center">
+                        <img src="{{ Storage::url($s->img_service) }}" class="cover img-products "
+                            alt="Responsive image">
+                        <div class=" body-large card-products text-center text-dark">{{ $s->name }}</div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 gy-1 card-products  align-items-center">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/bali-logo-fb.png') }}" class="cover img-products "
-                        alt="Responsive image">
-                    <div class="bg-danger body-large card-products text-center">bali United Fc</div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     {{-- end Content- --}}
@@ -406,11 +341,11 @@
 
         </div>
     </div>
-    
+
     {{-- end content 5 --}}
 
     {{-- carousel-2 --}}
-<div id="carouselExampleIndicators" class="container-fluid carousel slide">
+    <div id="carouselExampleIndicators" class="container-fluid carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -420,7 +355,7 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner ">
-            
+
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row ">
@@ -428,7 +363,7 @@
                             <img src="{{ asset('assets/images/konser-11.jpg') }}" class="cover"
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6  pl-4" >
+                        <div class="col-lg-6  pl-4">
                             <p class="body-reguler">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                                 quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
@@ -446,7 +381,7 @@
                             <img src="{{ asset('assets/images/fluid-bg.png') }}" class="cover "
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6  pl-4" >
+                        <div class="col-lg-6  pl-4">
                             <p class="body-reguler">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                                 quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
@@ -457,7 +392,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="carousel-item ">
                 <div class="container">
                     <div class="row ">
@@ -465,7 +400,7 @@
                             <img src="{{ asset('assets/images/konser-12.jpg') }}" class="cover"
                                 alt="Responsive image">
                         </div>
-                        <div class="col-lg-6 pl-4" >
+                        <div class="col-lg-6 pl-4">
                             <p class="body-reguler">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                                 quam voluptas corporis fuga nemo tempora, mollitia beatae enim. Numquam, fuga. Aliquam
@@ -476,7 +411,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -516,15 +451,79 @@
         </div>
     </div>
 
+    <div class="container" style="margin-bottom: 30px;">
+        <div class="row gx-5">
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-1.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-2.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-3.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-4.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-5.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-6.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-7.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-8.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-9.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-lg-2 gy-1 card-products  align-items-center">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/ik-10.png') }}" class="cover img-products "
+                        alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Footer -->
     <div class=" d-flex mt-5 mx-0 my-0 w-100">
         <footer class="text-center text-lg-start bg-white text-muted mt-10 w-100">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->
-                <div class="me-5 d-none d-lg-block">
-                    <span>Get connected with us on social networks:</span>
-                </div>
+
                 <!-- Left -->
 
                 <!-- Right -->

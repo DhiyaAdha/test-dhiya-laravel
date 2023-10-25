@@ -20,7 +20,7 @@ class LandingController extends Controller
             // Cari produk berdasarkan ID
             $product = Product::all();
             $service = Service::all();
-            // dd($product);
+            // dd($product, $service);
 
             // return ResponseFormatter::success($product, 'Product found');
             return view('layouts.index', compact('product', 'service'));
