@@ -85,13 +85,13 @@
     <div class="container ">
         <div class="row hero-title ">
             <div class="col-lg-8 text-white mb-5">
-                <h1 class="cover-title">
+                <p class="cover-title" style="font-size: 104px">
                     28 Million Community
-                </h1>
+                </p>
             </div>
             <div class="col-lg-12 text-white mb-10">
                 <button type="button" class="btn btn-outline-light"
-                    style="border: 3px solid; text-transform: uppercase;">
+                    style="border: 1px solid; text-transform: uppercase;">
                     <span class="Subtitle">
                         Lets work with us
                     </span>
