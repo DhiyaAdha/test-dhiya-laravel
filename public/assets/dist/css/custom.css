@@ -207,3 +207,16 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.yellow-line {
+    display: inline-block;
+    position: absolute;
+    width: 230px;
+    height: 10px;
+    background-color: #FFC436;
+    border: 1px solid #FFC436;
+    right: 640px;
+    top: 4060px;
+    opacity: 60%;
+    /* box-sizing: border-box; */
+}

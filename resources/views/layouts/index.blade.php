@@ -438,10 +438,15 @@
 
                 <span class="cta-title">
                     let's create
+
                 </span>
-                <span class="cta-end">
+                <span class="cta-end" style="font-weight: bold; z-index: 3000; ">
                     creative project
+                    
                 </span>
+                <div class="yellow-line">
+                </div>
+                
             </div>
             <div class="col-lg-12 Subtitle cta-title text-center mt-2">
                 <button type="button" class="btn btn-outline-danger"
@@ -615,9 +620,9 @@
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
                             <img src="{{ asset('assets/convert/ig-icon.png') }}" alt=""
-                                    style="width: 30px; height: 30px;">
+                                style="width: 30px; height: 30px;">
                             <h6 class="text-uppercase mb-4">© 2021 Copyright:</h6>
-                                </div>
+                        </div>
                         <!-- Grid column -->
                     </div>
                     <!-- Grid row -->
@@ -627,7 +632,7 @@
 
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-                
+
                 {{-- © 2021 Copyright:
                 <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> --}}
             </div>
